@@ -78,6 +78,5 @@ class TodoListController @Inject() (
     case None =>
       BadRequest
   }
-    //Ok("contact saved") // or if you want to render a templated: Ok(someTemplate())
   }
 }
