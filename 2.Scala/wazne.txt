@@ -1,0 +1,4 @@
+https://www.cyberscala.org/scala-native-on-wsl2/
+https://www.baeldung.com/scala/play-rest-api
+https://shunsvineyard.info/2020/11/20/setting-up-vs-code-for-scala-development-on-wsl/
+https://github.com/playframework/play-scala-seed.g8
