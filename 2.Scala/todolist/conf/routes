@@ -5,12 +5,10 @@
 
 # An example controller showing a sample home page
 
-
-
 # Map static resources from the /public folder to the /assets URL path
-GET     /todo                           controllers.TodoListController.showAll
-GET    /todo/:itemId           controllers.TodoListController.showById(itemId: Long)
-PUT     /todo/done/:itemId          controllers.TodoListController.markAsDone(itemId: Long)
+GET     /todo                       controllers.TodoListController.showAll
+GET     /todo/:itemId               controllers.TodoListController.showById(itemId: Long)
+PUT     /todo/done/:itemId          controllers.TodoListController.update(itemId: Long)
 DELETE  /todo/done                  controllers.TodoListController.deleteAllDone
-DELETE  /todo/:itemId                    controllers.TodoListController.delete(itemId: Long)
-POST    /todo                       controllers.TodoListController.addNewItem
+DELETE  /todo/:itemId               controllers.TodoListController.delete(itemId: Long)
+POST    /todo                       controllers.TodoListController.add

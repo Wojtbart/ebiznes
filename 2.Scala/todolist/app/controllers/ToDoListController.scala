@@ -9,20 +9,22 @@ import play.api.libs.json._
 import play.api.mvc.{Action, AnyContent, BaseController, ControllerComponents}
 import scala.collection.mutable
 
-
 //Należy stworzyć aplikację na frameworku Play w Scali 2, która będzie miała zaimplementowane 3 kontrolery CRUD (w sumie 15 endpointów). Kontrolery mogą bazować na listach zamiast baz danych. CRUD: showAll, showById (get), update (put), delete (delete), add (post).
 
-@Singleton
-class TodoListController @Inject() (
-    val controllerComponents: ControllerComponents
-) extends BaseController {
+@Singleton //wyłącznie jedna instancja
+class TodoListController @Inject() (val controllerComponents: ControllerComponents) extends BaseController 
+{
+  private val todoList = new mutable.ListBuffer[TodoListItem]() //lista zadań 
 
-  private val todoList = new mutable.ListBuffer[TodoListItem]()
-  todoList += TodoListItem(1, "jakas wartosc testowa1", true)
-  todoList += TodoListItem(2, "jakas wartosc testowa2", false)
+  // dodajemy zadania do listy
+  todoList += TodoListItem(1, "pójść do sklepu", true)
+  todoList += TodoListItem(2, "wyrzucić śmieci", false)
+  todoList += TodoListItem(3, "zrobić pranie", false)
 
   implicit val todoListJson = Json.format[TodoListItem]
   implicit val newTodoListJson = Json.format[NewTodoListItem]
+
+  // POSZCZEGÓLNE METODY
 
   // curl localhost:9000/todo -> GET
   def showAll(): Action[AnyContent] = Action {
@@ -39,11 +41,11 @@ class TodoListController @Inject() (
   }
 
   // curl -X PUT localhost:9000/todo/done/1 -> PUT
-  def markAsDone(itemId: Long) = Action {
+  def update(itemId: Long) = Action {
     val foundItem = todoList.find(_.id == itemId)
     foundItem match {
       case Some(item) =>
-        val newItem = item.copy(isItDone = true)
+        val newItem = item.copy(zrobione = true)
         todoList.dropWhileInPlace(_.id == itemId)
         todoList += newItem
         Accepted(Json.toJson(newItem))
@@ -53,30 +55,30 @@ class TodoListController @Inject() (
 
   // curl -X DELETE localhost:9000/todo/done ->DELETE
   def deleteAllDone() = Action {
-    todoList.filterInPlace(_.isItDone == false)
+    todoList.filterInPlace(_.zrobione == false)
     Accepted
   }
 
-   // curl -X DELETE localhost:9000/todo/1 ->DELETE
+    // curl -X DELETE localhost:9000/todo/1 ->DELETE
   def delete(itemId: Long) = Action {
     todoList.filterInPlace(_.id != itemId)
     Accepted
   }
 
-  // curl -v -d '{"description": "some new item"}' -H 'Content-Type: application/json' -X POST localhost:9000/todo
-  def addNewItem() = Action { implicit request => //POST
+  // curl -v -d '{"opis": "some new item"}' -H 'Content-Type: application/json' -X POST localhost:9000/todo
+  def add() = Action { implicit request => //POST
     val content = request.body
     val jsonObject = content.asJson
 
     val todoListItem: Option[NewTodoListItem] = jsonObject.flatMap(Json.fromJson[NewTodoListItem](_).asOpt)
     todoListItem match {
-    case Some(newItem) =>
-      val nextId = todoList.map(_.id).max + 1
-      val toBeAdded = TodoListItem(nextId, newItem.description, false)
-      todoList += toBeAdded
-      Created(Json.toJson(toBeAdded))
-    case None =>
-      BadRequest
-  }
+      case Some(newItem) =>
+        val nextId = todoList.map(_.id).max + 1
+        val toBeAdded = TodoListItem(nextId, newItem.opis, false)
+        todoList += toBeAdded
+        Created(Json.toJson(toBeAdded))
+      case None =>
+        BadRequest
+    }
   }
 }

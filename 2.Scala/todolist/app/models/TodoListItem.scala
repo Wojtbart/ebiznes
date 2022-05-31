@@ -1,4 +1,4 @@
 package models
 
-case class TodoListItem(id: Long, description: String, isItDone: Boolean)
-case class NewTodoListItem(description: String)
+case class TodoListItem(id: Int, opis: String, zrobione: Boolean)
+case class NewTodoListItem(opis: String)
