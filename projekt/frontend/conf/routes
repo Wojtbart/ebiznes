@@ -1,0 +1,42 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+#routes
+
+GET     /shoppingCart                   controllers.shoppingCart.ShoppingCartController.showAll()
+GET     /shoppingCart/:itemId           controllers.shoppingCart.ShoppingCartController.showById(itemId: Long)
+GET     /shoppingCart/user/:token          controllers.shoppingCart.ShoppingCartController.getByUser(token: String)
+PUT     /shoppingCart/update/:itemId/token    controllers.shoppingCart.ShoppingCartController.update(itemId: Long, token: String)
+DELETE  /shoppingCart/:itemId           controllers.shoppingCart.ShoppingCartController.delete(itemId: Long)
++ nocsrf
+POST    /shoppingCart/:token                  controllers.shoppingCart.ShoppingCartController.add(token: String)
+
+GET     /product                       controllers.product.ProductController.showAll()
+GET     /product/:itemId               controllers.product.ProductController.showById(itemId: Long)
+PUT     /product/update/:itemId        controllers.product.ProductController.update(itemId: Long)
+DELETE  /product/:itemId               controllers.product.ProductController.delete(itemId: Long)
+POST    /product                       controllers.product.ProductController.add()
+
+
+GET     /payments                       controllers.payments.PaymentsController.showAll()
+GET     /payments/:itemId               controllers.payments.PaymentsController.showById(itemId: Long)
+PUT     /payments/update/:itemId        controllers.payments.PaymentsController.update(itemId: Long)
+DELETE  /payments/:itemId               controllers.payments.PaymentsController.delete(itemId: Long)
+POST    /payments                       controllers.payments.PaymentsController.add()
+
+GET     /google/googleRedirect      login.google.GoogleRun.googleLogin()
+GET     /google/callback            login.google.GoogleRun.googleCallback(code: String ?= "", state: String ?= "")
+
+GET     /github/githubRedirect      login.github.GithubRun.githubLogin()
+GET     /github/callback            login.github.GithubRun.githubCallback(code: String ?= "", state: String ?= "")
+
+GET     /facebook/facebookRedirect     login.facebook.FacebookRun.facebookLogin()
+GET     /facebook/callback            login.facebook.FacebookRun.facebookCallback(code: String ?= "", state: String ?= "", error ?= "")
+
+#GET     /linkedin/linkedinRedirect      login.linkedin.LinkedinRun.linkedinLogin()
+#GET     /linkedin/callback            login.linkedin.LinkedinRun.linkedinCallback(code: String ?= "", state: String ?= "")
+
+GET     /logout                    logout.Logout.logoutController()
+GET     /logoutCallback            logout.Logout.logoutCallback()
