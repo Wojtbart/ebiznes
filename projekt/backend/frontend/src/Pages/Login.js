@@ -5,15 +5,20 @@ import { useSearchParams } from "react-router-dom";
 import { useCookies } from 'react-cookie';
 import  { useEffect }  from "react";
 import { Navigate  } from 'react-router-dom';
+// import https from 'https';
 
+// const httpsAgent = new https.Agent({rejectUnauthorized: false});
 let config = {
     baseURL: `http://localhost:9000/`,
     headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-        'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token, Authorization'
+        'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token, Authorization',
+        
       }
+      
+      
 }
 
 //hooki do logowania
@@ -34,7 +39,7 @@ const handleFacebookRedirect = async () => {
 }
 
 const handleGithubRedirect = async () => {
-    axios.get('http://localhost:9000/github/githubRedirect',{withCredentials: true},config)
+    axios.get('https://localhost:9443/github/githubRedirect',{withCredentials: true},config)
     .then((githubLogin) => {
         console.log(githubLogin.data);
         window.open(githubLogin.data, "_self");
