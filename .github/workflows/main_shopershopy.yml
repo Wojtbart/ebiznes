@@ -48,7 +48,7 @@ jobs:
         run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag wojtbart/react_app:${{ github.sha }}
+        run: sudo docker build . --file Dockerfile --tag wojtbart/react_app:${{ github.sha }}
 
       - name: Docker Push
         run: docker push wojtbart/react_app:${{ github.sha }}
