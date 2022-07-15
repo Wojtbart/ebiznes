@@ -68,4 +68,4 @@ jobs:
         app-name: 'shopershopy'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_15c31ad3007e413f95144c7c386e827b }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_b7c5978bff334771834a8d3000b3dd02 }}/wojtbart/react_app:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_b7c5978bff334771834a8d3000b3dd02 }}/react_app:${{ github.sha }}'
