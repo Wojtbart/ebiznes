@@ -3,7 +3,7 @@ import { useCookies } from 'react-cookie';
 import axios from 'axios'
 
 let config = {
-    baseURL: `http://localhost:9000/`,
+    baseURL: 'https://shopershopy-back.azurewebsites.net/',
     headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
