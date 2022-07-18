@@ -82,8 +82,9 @@ button {
   /* font-size: inherit; */
   cursor: pointer;
 }
-button:hover {
-  background: lighten(#077915, 10%);
+
+button:hover{
+  background-color: rgb(95, 156, 33);
 }
 button:focus {
   outline: none;
@@ -340,15 +341,6 @@ p{
   text-align:center;
   color:black;
   background-color: #ddd;
-}
-.summaryh2{
-  margin:20px;
-}
-
-
-
-
-.formCard {
   width: 30vw;
   min-width: 500px;
   align-self: center;
@@ -357,6 +349,10 @@ p{
   border-radius: 7px;
   padding: 40px;
 }
+.summaryh2{
+  margin:20px;
+}
+
 
 input {
   border-radius: 6px;
@@ -602,9 +598,7 @@ input {
 button a{
   color:white;
 }
-button:hover{
-  background-color: rgb(95, 156, 33);
-}
+
 button a:hover{
  color:white;
 }

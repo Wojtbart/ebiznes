@@ -11,7 +11,7 @@ import { Navigate  } from 'react-router-dom';
 let config = {
     baseURL: 'https://shopershopy-backend.azurewebsites.net/',
     headers: {
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': 'https://shopershopy-backend.azurewebsites.net:8082',
         'Content-Type': 'application/json',
         'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
         'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token, Authorization',
