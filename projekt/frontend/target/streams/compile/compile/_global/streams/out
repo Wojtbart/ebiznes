@@ -1,0 +1,81 @@
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:70:8: object Controller is not a member of package play.api.mvc[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.mvc.Controller[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:71:12: object scribe is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scribe.builder.ServiceBuilder[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:72:12: object scribe is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scribe.oauth.OAuthService[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:73:12: object scribe is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scribe.builder.api.LinkedInApi[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:74:12: object scribe is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scribe.model.Token[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:76:12: object scribe is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scribe.model.Verifier[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:77:12: object scribe is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scribe.model.OAuthRequest[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:78:12: object scribe is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scribe.model.Verb[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:79:12: object scribe is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scribe.model.Response[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:85:35: not found: type Controller[0m
+[0m[[0m[31merror[0m] [0m[0mobject LinkedInController extends Controller {[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:86:27: value current is not a member of object play.api.Play[0m
+[0m[[0m[31merror[0m] [0m[0mval apiKey: String = Play.current.configuration.getString("linkedin.key").get[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:87:30: value current is not a member of object play.api.Play[0m
+[0m[[0m[31merror[0m] [0m[0mval apiSecret: String = Play.current.configuration.getString("linkedin.secret").get[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:88:19: not found: type Token[0m
+[0m[[0m[31merror[0m] [0m[0mvar requestToken: Token = null[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:95:22: not found: type OAuthService[0m
+[0m[[0m[31merror[0m] [0m[0mdef getOAuthService: OAuthService = {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:110:29: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0mdef getContextUrl: String = {[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:114:54: not found: value Action[0m
+[0m[[0m[31merror[0m] [0m[0mdef linkedinLogin: Action[play.api.mvc.AnyContent] = Action {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:127:57: not found: value Action[0m
+[0m[[0m[31merror[0m] [0m[0mdef linkedinCallback: Action[play.api.mvc.AnyContent] = Action { implicit request =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/Linkedin.scala:157:74: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[String][0m
+[0m[[0m[31merror[0m] [0m[0mdef getVerifier(queryString: Map[String, Seq[String]]): Option[String] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/LinkedinRun.scala:25:21: not found: type Linkedin[0m
+[0m[[0m[31merror[0m] [0m[0m  val linkedinInst: Linkedin = Linkedin.instance(backend)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/LinkedinRun.scala:25:32: not found: value Linkedin[0m
+[0m[[0m[31merror[0m] [0m[0m  val linkedinInst: Linkedin = Linkedin.instance(backend)[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/LinkedinRun.scala:38:43: overloaded method apply with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (block: => play.api.mvc.Result)play.api.mvc.Action[play.api.mvc.AnyContent] <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (block: play.api.mvc.Request[play.api.mvc.AnyContent] => play.api.mvc.Result)play.api.mvc.Action[play.api.mvc.AnyContent][0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Unit)[0m
+[0m[[0m[31merror[0m] [0m[0m  def githubLogin(): Action[AnyContent] = Action {[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/linkedin/LinkedinRun.scala:44:73: overloaded method apply with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (block: => play.api.mvc.Result)play.api.mvc.Action[play.api.mvc.AnyContent] <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (block: play.api.mvc.Request[play.api.mvc.AnyContent] => play.api.mvc.Result)play.api.mvc.Action[play.api.mvc.AnyContent][0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Unit)[0m
+[0m[[0m[31merror[0m] [0m[0m  def githubCallback(code: String, state: String): Action[AnyContent] = Action {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/conf/routes:36:1: type LinkedinRun is not a member of package login.linkedin[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /linkedin/linkedinRedirect      login.linkedin.LinkedinRun.linkedinLogin()[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/conf/routes:36:1: type LinkedinRun is not a member of package login.linkedin[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /linkedin/linkedinRedirect      login.linkedin.LinkedinRun.linkedinLogin()[0m
+[0m[[0m[31merror[0m] [0m[0m24 errors found[0m

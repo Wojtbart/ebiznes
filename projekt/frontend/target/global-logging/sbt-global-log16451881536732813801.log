@@ -1,0 +1,332 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addDefaultCommands), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addDefaultCommands, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(initialize), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(initialize, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(boot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(writeSbtVersion, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.6.2 (Private Build Java 11.0.15)[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 2163.409ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 177.7779ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 1.2785ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadUnit: mkEval took 39.7386ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 33.2224 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project frontend-build from plugins.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(frontend-build) took 84.1882ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id frontend-build, base: /mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/project, plugins: List(<none>))) took 159.7472ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/project, returning: (frontend-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 790.9074ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 220.2852ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/project/, ...) took 1211.9861ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 1512.2016ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 9.3383ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 135.0591ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 18.5572ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 1509.4574ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 258.0551ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 4.7541ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 9923.7897ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.0135ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 7.0243ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(play.sbt.PlayScala), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(play.sbt.PlayAkkaHttpServer)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayFilters),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayLogback),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayMinimalJava),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.routes.RoutesCompiler)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.twirl.sbt.SbtTwirl)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.test.MediatorWorkaroundPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(giter8.ScaffoldPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.SbtNativePackager),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgent),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayAkkaHttpServer)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayFilters)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayLayoutPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayLogback)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(giter8.ScaffoldPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(And(Set(Atom(com.lightbend.sbt.javaagent.JavaAgent), Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))),Set(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,play.sbt.PlayScala,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,play.sbt.PlayWeb,play.twirl.sbt.SbtTwirl,sbt.plugins.JvmPlugin,play.sbt.PlayService,play.sbt.PlayFilters,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,play.sbt.PlayLogback,giter8.ScaffoldPlugin,sbt.plugins.MiniDependencyTreePlugin,com.typesafe.sbt.jse.SbtJsEngine,play.sbt.PlayAkkaHttpServer,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin,com.typesafe.sbt.packager.docker.DockerPlugin,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 249.4968 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 1073.4789ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: /mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend, plugins: List(play.sbt.PlayScala))) took 1393.1083ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 2383.0281ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 884.1919ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/, ...) took 13228.3185ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 13305.062ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 0.6509ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 168.8652ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 2.9368ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 1517.2519ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 376.0373ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.0068ms[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  __              __[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  \ \     ____   / /____ _ __  __[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m   \ \   / __ \ / // __ `// / / /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m   / /  / /_/ // // /_/ // /_/ /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  /_/  / .___//_/ \__,_/ \__, /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m      /_/               /____/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mVersion 2.8.16 running Java 11.0.15[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[1mPlay is run entirely by the community. Please consider contributing and/or donating:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mhttps://www.playframework.com/sponsors[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources and 1 Java source to /mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:3:8: not found: object cats[0m
+[0m[[0m[31merror[0m] [0m[0mimport cats.implicits._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:4:12: object ocadotechnology is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.ocadotechnology.sttp.oauth2.Secret[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:5:11: object circe is not a member of package io[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.circe.generic.auto._[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:7:8: not found: object sttp[0m
+[0m[[0m[31merror[0m] [0m[0mimport sttp.client3._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:8:8: not found: object sttp[0m
+[0m[[0m[31merror[0m] [0m[0mimport sttp.client3.circe.asJson[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:9:8: not found: object sttp[0m
+[0m[[0m[31merror[0m] [0m[0mimport sttp.model.Uri.QuerySegment.KeyValue[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:13:29: not found: type Secret[0m
+[0m[[0m[31merror[0m] [0m[0m  def userInfo(accessToken: Secret[String]): UserInfoWithMail[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:22:15: value uri is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0m  val myUri = uri"https://www.googleapis.com/oauth2/v3/userinfo"[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:24:25: not found: type SttpBackend[0m
+[0m[[0m[31merror[0m] [0m[0m  def instance(backend: SttpBackend[Identity, Any]): Google = (accessToken: Secret[String]) => {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:24:77: not found: type Secret[0m
+[0m[[0m[31merror[0m] [0m[0m  def instance(backend: SttpBackend[Identity, Any]): Google = (accessToken: Secret[String]) => {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:25:16: not found: value basicRequest[0m
+[0m[[0m[31merror[0m] [0m[0m    val user = basicRequest[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:27:17: not found: value asJson[0m
+[0m[[0m[31merror[0m] [0m[0m      .response(asJson[UserInfoWithMail]).send(backend)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/Google.scala:33:37: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m required: Throwable[0m
+[0m[[0m[31merror[0m] [0m[0m          case Left(error) => throw error[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:3:12: object ocadotechnology is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.ocadotechnology.sttp.oauth2.AuthorizationCodeProvider.Config[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:4:12: object ocadotechnology is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.ocadotechnology.sttp.oauth2.AuthorizationCodeProvider.Config.{Path, Segment}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:5:12: object ocadotechnology is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.ocadotechnology.sttp.oauth2.common.Scope[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:6:12: object ocadotechnology is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.ocadotechnology.sttp.oauth2.{AuthorizationCode, AuthorizationCodeProvider, OAuth2TokenResponse, Secret}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:7:11: object circe is not a member of package io[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.circe.Decoder[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:11:8: not found: object sttp[0m
+[0m[[0m[31merror[0m] [0m[0mimport sttp.client3.{SttpBackend, _}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:12:8: not found: object sttp[0m
+[0m[[0m[31merror[0m] [0m[0mimport sttp.model.Uri[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:13:8: not found: object sttp[0m
+[0m[[0m[31merror[0m] [0m[0mimport sttp.tapir.CodecFormat.TextPlain[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:14:8: not found: object sttp[0m
+[0m[[0m[31merror[0m] [0m[0mimport sttp.tapir._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:21:31: not found: type Codec[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val endpointCodec: Codec[String, AuthorizationCodec, TextPlain] =[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:22:5: not found: value Codec[0m
+[0m[[0m[31merror[0m] [0m[0m    Codec.string.map(AuthorizationCodec(_))(_.value)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:26:15: not found: type Config[0m
+[0m[[0m[31merror[0m] [0m[0m  val google: Config = Config([0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:26:24: not found: value Config[0m
+[0m[[0m[31merror[0m] [0m[0m  val google: Config = Config([0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:27:5: not found: value loginPath[0m
+[0m[[0m[31merror[0m] [0m[0m    loginPath = Path(List(Segment("o"), Segment("oauth2"), Segment("v2"), Segment("auth"))),[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:28:5: not found: value logoutPath[0m
+[0m[[0m[31merror[0m] [0m[0m    logoutPath = Path(List(Segment("logout"))),[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:29:5: not found: value tokenPath[0m
+[0m[[0m[31merror[0m] [0m[0m    tokenPath = Path(List(Segment("token")))[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:35:16: not found: type SttpBackend[0m
+[0m[[0m[31merror[0m] [0m[0m  val backend: SttpBackend[Identity, Any] = HttpURLConnectionBackend()[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:35:45: not found: value HttpURLConnectionBackend[0m
+[0m[[0m[31merror[0m] [0m[0m  val backend: SttpBackend[Identity, Any] = HttpURLConnectionBackend()[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:37:20: not found: type Uri[0m
+[0m[[0m[31merror[0m] [0m[0m  val redirectUri: Uri = Uri.unsafeParse(s"${configuration.get[String]("google.redirectUri")}")[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:37:26: not found: value Uri[0m
+[0m[[0m[31merror[0m] [0m[0m  val redirectUri: Uri = Uri.unsafeParse(s"${configuration.get[String]("google.redirectUri")}")[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:39:21: not found: type Secret[0m
+[0m[[0m[31merror[0m] [0m[0m  val clientSecret: Secret[String] = Secret(configuration.get[String]("google.clientSecret"))[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:39:38: not found: value Secret[0m
+[0m[[0m[31merror[0m] [0m[0m  val clientSecret: Secret[String] = Secret(configuration.get[String]("google.clientSecret"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:40:17: not found: type Uri[0m
+[0m[[0m[31merror[0m] [0m[0m  val tokenUri: Uri = Uri.unsafeParse(s"https://oauth2.googleapis.com/token")[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:40:23: not found: value Uri[0m
+[0m[[0m[31merror[0m] [0m[0m  val tokenUri: Uri = Uri.unsafeParse(s"https://oauth2.googleapis.com/token")[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:43:34: not found: type AuthorizationCodeProvider[0m
+[0m[[0m[31merror[0m] [0m[0m  val authorizationCodeProvider: AuthorizationCodeProvider[Uri, Identity] = AuthorizationCodeProvider.uriInstance[Identity]([0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:43:77: not found: value AuthorizationCodeProvider[0m
+[0m[[0m[31merror[0m] [0m[0m  val authorizationCodeProvider: AuthorizationCodeProvider[Uri, Identity] = AuthorizationCodeProvider.uriInstance[Identity]([0m
+[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:43:115: not found: type Identity[0m
+[0m[[0m[31merror[0m] [0m[0m  val authorizationCodeProvider: AuthorizationCodeProvider[Uri, Identity] = AuthorizationCodeProvider.uriInstance[Identity]([0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:44:5: not found: value baseUrl[0m
+[0m[[0m[31merror[0m] [0m[0m    baseUrl = Uri.unsafeParse("https://accounts.google.com/o/oauth2/v2/auth"),[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:46:14: reassignment to val[0m
+[0m[[0m[31merror[0m] [0m[0m    clientId = clientId,[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:48:5: not found: value pathsConfig[0m
+[0m[[0m[31merror[0m] [0m[0m    pathsConfig = ConfigGoogle.google[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:53:7: not found: value Scope[0m
+[0m[[0m[31merror[0m] [0m[0m      Scope("https://www.googleapis.com/auth/userinfo.email"),[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:54:7: not found: value Scope[0m
+[0m[[0m[31merror[0m] [0m[0m      Scope("https://www.googleapis.com/auth/userinfo.profile"))[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:59:85: not found: type Identity[0m
+[0m[[0m[31merror[0m] [0m[0m  def authCodeToToken[TT <: OAuth2TokenResponse.Basic : Decoder](authCode: String): Identity[TT] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:59:57: not found: type Decoder[0m
+[0m[[0m[31merror[0m] [0m[0m  def authCodeToToken[TT <: OAuth2TokenResponse.Basic : Decoder](authCode: String): Identity[TT] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:59:29: not found: value OAuth2TokenResponse[0m
+[0m[[0m[31merror[0m] [0m[0m  def authCodeToToken[TT <: OAuth2TokenResponse.Basic : Decoder](authCode: String): Identity[TT] =[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:60:5: not found: value AuthorizationCode[0m
+[0m[[0m[31merror[0m] [0m[0m    AuthorizationCode.authCodeToToken(tokenUri, redirectUri, clientId, clientSecret, authCode)(backend)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/mnt/c/Users/Lenovo/Desktop/e-lerning/studia_na_uj/magisterka/2semestr/ebiznes/projekt/frontend/app/login/google/GoogleRun.scala:64:33: not found: type OAuth2TokenResponse[0m
+[0m[[0m[31merror[0m] [0m[0m    val token = authCodeToToken[OAuth2TokenResponse](authCode.value)[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m50 errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
