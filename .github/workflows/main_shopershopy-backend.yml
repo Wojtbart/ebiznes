@@ -46,4 +46,4 @@ jobs:
         app-name: 'shopershopy-backend'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_54274ee4648342598ed2136f71080b4b }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_1464e5ac31bf481d80aa60b039ce8ea5 }}scala_back:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_1464e5ac31bf481d80aa60b039ce8ea5 }}/scala_back:${{ github.sha }}'
