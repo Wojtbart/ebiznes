@@ -9,7 +9,7 @@ import { Navigate  } from 'react-router-dom';
 
 // const httpsAgent = new https.Agent({rejectUnauthorized: false});
 let config = {
-    baseURL: 'https://shopershopy-back.azurewebsites.net/',
+    baseURL: 'https://shopershopy-backend.azurewebsites.net/',
     headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ let config = {
 
 //hooki do logowania
 const handleGoogleRedirect = async () => {
-    axios.get("https://shopershopy-back.azurewebsites.net/google/googleRedirect",{withCredentials: true},config)
+    axios.get("https://shopershopy-backend.azurewebsites.net/google/googleRedirect",{withCredentials: true},config)
     .then((googleLogin) => {
         console.log(googleLogin.data);
         window.open(googleLogin.data, "_self");
@@ -31,7 +31,7 @@ const handleGoogleRedirect = async () => {
 }
 
 const handleFacebookRedirect = async () => {
-    axios.get("https://shopershopy-back.azurewebsites.net/facebook/facebookRedirect",{withCredentials: true},config)
+    axios.get("https://shopershopy-backend.azurewebsites.net/facebook/facebookRedirect",{withCredentials: true},config)
     .then((facebookLogin) => {
         console.log(facebookLogin.data);
         window.open(facebookLogin.data, "_self");
@@ -39,7 +39,7 @@ const handleFacebookRedirect = async () => {
 }
 
 const handleGithubRedirect = async () => {
-    axios.get('https://shopershopy-back.azurewebsites.net/github/githubRedirect',{withCredentials: true},config)
+    axios.get('https://shopershopy-backend.azurewebsites.net/github/githubRedirect',{withCredentials: true},config)
     .then((githubLogin) => {
         console.log(githubLogin.data);
         window.open(githubLogin.data, "_self");
@@ -47,7 +47,7 @@ const handleGithubRedirect = async () => {
 }
 
 const handlelinkedinRedirect = async () => {
-    axios.get("https://shopershopy-back.azurewebsites.net/linkedin/linkedinRedirect",{withCredentials: true},config)
+    axios.get("https://shopershopy-backend.azurewebsites.net/linkedin/linkedinRedirect",{withCredentials: true},config)
     .then((linkedinLogin) => {
         console.log(linkedinLogin.data);
         window.open(linkedinLogin.data, "_self");
