@@ -23,7 +23,6 @@ object Google {
   
 
   def instance(backend: SttpBackend[Identity, Any]): Google = (accessToken: Secret[String]) => {
-    // println(myUri)
     val user = basicRequest.get(myUri.addQuerySegment(KeyValue("access_token", accessToken.value))).response(asJson[UserInfoWithMail]).send(backend).map { response =>
         response.body match {
           case Right(t) => {

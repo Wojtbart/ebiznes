@@ -79,10 +79,6 @@ class PaymentsController @Inject() (controllerComponents: ControllerComponents,c
 
     paymentListItem match {
       case Some(newItem) =>
-        // val nextId = paymentsList.map(_.id).max + 1
-        // val toBeAdded = Payment(nextId, newItem.number_card, newItem.name ,newItem.expiration_date,newItem.cvc)
-        // paymentsList += toBeAdded
-        // Created(Json.toJson(toBeAdded))
 
         val chargeParams = Map(
           "amount" -> newItem.value.toString,

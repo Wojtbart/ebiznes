@@ -22,8 +22,6 @@ class ShoppingCartController @Inject() (controllerComponents: ControllerComponen
   shoppingCartList += ShoppingCart(2,2,"", Array(ShoppingCartProduct(Product(2, "Gruszka",1.5, 3.5), 2)))
   shoppingCartList += ShoppingCart(3,3,"", Array(ShoppingCartProduct(Product(3, "Pomidor",2.5, 2), 3)) )
 
-  // implicit val todoListJson = Json.format[TodoListItem]
-  // implicit val newTodoListJson = Json.format[NewTodoListItem]
 
   implicit val productJson:OFormat[Product]= Json.format[Product]
   implicit val shoppingCartProductJson:OFormat[ShoppingCartProduct]= Json.format[ShoppingCartProduct]
