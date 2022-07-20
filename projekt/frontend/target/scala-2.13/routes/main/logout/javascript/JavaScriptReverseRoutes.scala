@@ -6,10 +6,10 @@ import play.api.routing.JavaScriptReverseRoute
 
 import _root_.controllers.Assets.Asset
 
-// @LINE:41
+// @LINE:44
 package logout.javascript {
 
-  // @LINE:41
+  // @LINE:44
   class ReverseLogout(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -17,7 +17,7 @@ package logout.javascript {
     }
 
   
-    // @LINE:41
+    // @LINE:44
     def logoutController: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "logout.Logout.logoutController",
       """
@@ -27,7 +27,7 @@ package logout.javascript {
       """
     )
   
-    // @LINE:42
+    // @LINE:45
     def logoutCallback: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "logout.Logout.logoutCallback",
       """

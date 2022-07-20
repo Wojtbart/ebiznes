@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { GithubLoginButton, GoogleLoginButton, FacebookLoginButton, LinkedInLoginButton} from "react-social-login-buttons";
+import { GithubLoginButton, GoogleLoginButton, FacebookLoginButton,DiscordLoginButton } from "react-social-login-buttons";
 import { useSearchParams } from "react-router-dom";
 import { useCookies } from 'react-cookie';
 import  { useEffect }  from "react";
@@ -9,9 +9,9 @@ import { Navigate  } from 'react-router-dom';
 
 // const httpsAgent = new https.Agent({rejectUnauthorized: false});
 let config = {
-    baseURL: 'https://shopershopy-backend.azurewebsites.net/',
+    baseURL: `http://localhost:9000/`,
     headers: {
-        'Access-Control-Allow-Origin': 'https://shopershopy-backend.azurewebsites.net:9002',
+        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
         'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token, Authorization',
@@ -23,7 +23,7 @@ let config = {
 
 //hooki do logowania
 const handleGoogleRedirect = async () => {
-    axios.get("https://shopershopy-backend.azurewebsites.net/google/googleRedirect",{withCredentials: true},config)
+    axios.get("http://localhost:9000/google/googleRedirect",{withCredentials: true},config)
     .then((googleLogin) => {
         console.log(googleLogin.data);
         window.open(googleLogin.data, "_self");
@@ -31,7 +31,7 @@ const handleGoogleRedirect = async () => {
 }
 
 const handleFacebookRedirect = async () => {
-    axios.get("https://shopershopy-backend.azurewebsites.net/facebook/facebookRedirect",{withCredentials: true},config)
+    axios.get("http://localhost:9000/facebook/facebookRedirect",{withCredentials: true},config)
     .then((facebookLogin) => {
         console.log(facebookLogin.data);
         window.open(facebookLogin.data, "_self");
@@ -39,7 +39,7 @@ const handleFacebookRedirect = async () => {
 }
 
 const handleGithubRedirect = async () => {
-    axios.get('/github/githubRedirect',{withCredentials: true},config)
+    axios.get('http://localhost:9000/github/githubRedirect',{withCredentials: true})
     .then((githubLogin) => {
         console.log(githubLogin.data);
         window.open(githubLogin.data, "_self");
@@ -47,7 +47,7 @@ const handleGithubRedirect = async () => {
 }
 
 const handlelinkedinRedirect = async () => {
-    axios.get("https://shopershopy-backend.azurewebsites.net/linkedin/linkedinRedirect",{withCredentials: true},config)
+    axios.get("http://localhost:9000/discord/discordRedirect",{withCredentials: true})
     .then((linkedinLogin) => {
         console.log(linkedinLogin.data);
         window.open(linkedinLogin.data, "_self");
@@ -74,7 +74,7 @@ function Login(props) {
                 <GoogleLoginButton className="googleButton" onClick={handleGoogleRedirect} />
                 <FacebookLoginButton className="facebookButton" onClick={handleFacebookRedirect} />
                 <GithubLoginButton className="githubButton" onClick={handleGithubRedirect} />
-                <LinkedInLoginButton className="linkedinButton" onClick={handlelinkedinRedirect} />
+                <DiscordLoginButton className="linkedinButton" onClick={handlelinkedinRedirect} />
             </div>
         </div>
         :

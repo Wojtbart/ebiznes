@@ -4,23 +4,6 @@ import { ProductsContext } from "./ProductsContext";
 import Product from "./Product"
 import { Link } from "react-router-dom";
 
-// let counter=0;
-
-// export function isClicked () {
-//     //dom not only ready, but everything is loaded
-//     const element = document.querySelector('.btn')
-//     const parent = document.querySelector('.other')
-//     console.log("siemanko")
-
-//     // always checking if the element is clicked, if so, do alert('hello')
-//     element.addEventListener("click", () => {
-//         console.log("click")
-//         counter+=1;
-//         console.log("parent",parent)
-//         parent.append("ooo");
-//         console.log("dodane")
-//     });
-// };
 
 
 function ProductList() {

@@ -13,7 +13,7 @@ import _root_.controllers.Assets.Asset
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:8
-  ShoppingCartController_6: controllers.shoppingCart.ShoppingCartController,
+  ShoppingCartController_7: controllers.shoppingCart.ShoppingCartController,
   // @LINE:16
   ProductController_5: controllers.product.ProductController,
   // @LINE:23
@@ -25,6 +25,8 @@ class Routes(
   // @LINE:35
   FacebookRun_0: login.facebook.FacebookRun,
   // @LINE:41
+  DiscordRun_6: login.discord.DiscordRun,
+  // @LINE:44
   Logout_2: logout.Logout,
   val prefix: String
 ) extends GeneratedRouter {
@@ -32,7 +34,7 @@ class Routes(
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:8
-    ShoppingCartController_6: controllers.shoppingCart.ShoppingCartController,
+    ShoppingCartController_7: controllers.shoppingCart.ShoppingCartController,
     // @LINE:16
     ProductController_5: controllers.product.ProductController,
     // @LINE:23
@@ -44,13 +46,15 @@ class Routes(
     // @LINE:35
     FacebookRun_0: login.facebook.FacebookRun,
     // @LINE:41
+    DiscordRun_6: login.discord.DiscordRun,
+    // @LINE:44
     Logout_2: logout.Logout
-  ) = this(errorHandler, ShoppingCartController_6, ProductController_5, PaymentsController_4, GoogleRun_3, GithubRun_1, FacebookRun_0, Logout_2, "/")
+  ) = this(errorHandler, ShoppingCartController_7, ProductController_5, PaymentsController_4, GoogleRun_3, GithubRun_1, FacebookRun_0, DiscordRun_6, Logout_2, "/")
 
   def withPrefix(addPrefix: String): Routes = {
     val prefix = play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, ShoppingCartController_6, ProductController_5, PaymentsController_4, GoogleRun_3, GithubRun_1, FacebookRun_0, Logout_2, prefix)
+    new Routes(errorHandler, ShoppingCartController_7, ProductController_5, PaymentsController_4, GoogleRun_3, GithubRun_1, FacebookRun_0, DiscordRun_6, Logout_2, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -80,6 +84,8 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """github/callback""", """login.github.GithubRun.githubCallback(code:String ?= "", state:String ?= "")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """facebook/facebookRedirect""", """login.facebook.FacebookRun.facebookLogin()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """facebook/callback""", """login.facebook.FacebookRun.facebookCallback(code:String ?= "", state:String ?= "", error:String ?= "")"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """discord/discordRedirect""", """login.discord.DiscordRun.discordLogin()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """discord/callback""", """login.discord.DiscordRun.discordCallback(code:String ?= "", state:String ?= "", error:String ?= "")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """logout.Logout.logoutController()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logoutCallback""", """logout.Logout.logoutCallback()"""),
     Nil
@@ -94,7 +100,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("shoppingCart")))
   )
   private[this] lazy val controllers_shoppingCart_ShoppingCartController_showAll0_invoker = createInvoker(
-    ShoppingCartController_6.showAll(),
+    ShoppingCartController_7.showAll(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.shoppingCart.ShoppingCartController",
@@ -112,7 +118,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("shoppingCart/"), DynamicPart("itemId", """[^/]+""",true)))
   )
   private[this] lazy val controllers_shoppingCart_ShoppingCartController_showById1_invoker = createInvoker(
-    ShoppingCartController_6.showById(fakeValue[Long]),
+    ShoppingCartController_7.showById(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.shoppingCart.ShoppingCartController",
@@ -130,7 +136,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("shoppingCart/user/"), DynamicPart("token", """[^/]+""",true)))
   )
   private[this] lazy val controllers_shoppingCart_ShoppingCartController_getByUser2_invoker = createInvoker(
-    ShoppingCartController_6.getByUser(fakeValue[String]),
+    ShoppingCartController_7.getByUser(fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.shoppingCart.ShoppingCartController",
@@ -148,7 +154,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("shoppingCart/update/"), DynamicPart("itemId", """[^/]+""",true), StaticPart("/token")))
   )
   private[this] lazy val controllers_shoppingCart_ShoppingCartController_update3_invoker = createInvoker(
-    ShoppingCartController_6.update(fakeValue[Long], fakeValue[String]),
+    ShoppingCartController_7.update(fakeValue[Long], fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.shoppingCart.ShoppingCartController",
@@ -166,7 +172,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("shoppingCart/"), DynamicPart("itemId", """[^/]+""",true)))
   )
   private[this] lazy val controllers_shoppingCart_ShoppingCartController_delete4_invoker = createInvoker(
-    ShoppingCartController_6.delete(fakeValue[Long]),
+    ShoppingCartController_7.delete(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.shoppingCart.ShoppingCartController",
@@ -184,7 +190,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("shoppingCart/"), DynamicPart("token", """[^/]+""",true)))
   )
   private[this] lazy val controllers_shoppingCart_ShoppingCartController_add5_invoker = createInvoker(
-    ShoppingCartController_6.add(fakeValue[String]),
+    ShoppingCartController_7.add(fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.shoppingCart.ShoppingCartController",
@@ -486,10 +492,46 @@ class Routes(
   )
 
   // @LINE:41
-  private[this] lazy val logout_Logout_logoutController22_route = Route("GET",
+  private[this] lazy val login_discord_DiscordRun_discordLogin22_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("discord/discordRedirect")))
+  )
+  private[this] lazy val login_discord_DiscordRun_discordLogin22_invoker = createInvoker(
+    DiscordRun_6.discordLogin(),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "login.discord.DiscordRun",
+      "discordLogin",
+      Nil,
+      "GET",
+      this.prefix + """discord/discordRedirect""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:42
+  private[this] lazy val login_discord_DiscordRun_discordCallback23_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("discord/callback")))
+  )
+  private[this] lazy val login_discord_DiscordRun_discordCallback23_invoker = createInvoker(
+    DiscordRun_6.discordCallback(fakeValue[String], fakeValue[String], fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "login.discord.DiscordRun",
+      "discordCallback",
+      Seq(classOf[String], classOf[String], classOf[String]),
+      "GET",
+      this.prefix + """discord/callback""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:44
+  private[this] lazy val logout_Logout_logoutController24_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("logout")))
   )
-  private[this] lazy val logout_Logout_logoutController22_invoker = createInvoker(
+  private[this] lazy val logout_Logout_logoutController24_invoker = createInvoker(
     Logout_2.logoutController(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -503,11 +545,11 @@ class Routes(
     )
   )
 
-  // @LINE:42
-  private[this] lazy val logout_Logout_logoutCallback23_route = Route("GET",
+  // @LINE:45
+  private[this] lazy val logout_Logout_logoutCallback25_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("logoutCallback")))
   )
-  private[this] lazy val logout_Logout_logoutCallback23_invoker = createInvoker(
+  private[this] lazy val logout_Logout_logoutCallback25_invoker = createInvoker(
     Logout_2.logoutCallback(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -527,37 +569,37 @@ class Routes(
     // @LINE:8
     case controllers_shoppingCart_ShoppingCartController_showAll0_route(params@_) =>
       call { 
-        controllers_shoppingCart_ShoppingCartController_showAll0_invoker.call(ShoppingCartController_6.showAll())
+        controllers_shoppingCart_ShoppingCartController_showAll0_invoker.call(ShoppingCartController_7.showAll())
       }
   
     // @LINE:9
     case controllers_shoppingCart_ShoppingCartController_showById1_route(params@_) =>
       call(params.fromPath[Long]("itemId", None)) { (itemId) =>
-        controllers_shoppingCart_ShoppingCartController_showById1_invoker.call(ShoppingCartController_6.showById(itemId))
+        controllers_shoppingCart_ShoppingCartController_showById1_invoker.call(ShoppingCartController_7.showById(itemId))
       }
   
     // @LINE:10
     case controllers_shoppingCart_ShoppingCartController_getByUser2_route(params@_) =>
       call(params.fromPath[String]("token", None)) { (token) =>
-        controllers_shoppingCart_ShoppingCartController_getByUser2_invoker.call(ShoppingCartController_6.getByUser(token))
+        controllers_shoppingCart_ShoppingCartController_getByUser2_invoker.call(ShoppingCartController_7.getByUser(token))
       }
   
     // @LINE:11
     case controllers_shoppingCart_ShoppingCartController_update3_route(params@_) =>
       call(params.fromPath[Long]("itemId", None), params.fromQuery[String]("token", None)) { (itemId, token) =>
-        controllers_shoppingCart_ShoppingCartController_update3_invoker.call(ShoppingCartController_6.update(itemId, token))
+        controllers_shoppingCart_ShoppingCartController_update3_invoker.call(ShoppingCartController_7.update(itemId, token))
       }
   
     // @LINE:12
     case controllers_shoppingCart_ShoppingCartController_delete4_route(params@_) =>
       call(params.fromPath[Long]("itemId", None)) { (itemId) =>
-        controllers_shoppingCart_ShoppingCartController_delete4_invoker.call(ShoppingCartController_6.delete(itemId))
+        controllers_shoppingCart_ShoppingCartController_delete4_invoker.call(ShoppingCartController_7.delete(itemId))
       }
   
     // @LINE:14
     case controllers_shoppingCart_ShoppingCartController_add5_route(params@_) =>
       call(params.fromPath[String]("token", None)) { (token) =>
-        controllers_shoppingCart_ShoppingCartController_add5_invoker.call(ShoppingCartController_6.add(token))
+        controllers_shoppingCart_ShoppingCartController_add5_invoker.call(ShoppingCartController_7.add(token))
       }
   
     // @LINE:16
@@ -657,15 +699,27 @@ class Routes(
       }
   
     // @LINE:41
-    case logout_Logout_logoutController22_route(params@_) =>
+    case login_discord_DiscordRun_discordLogin22_route(params@_) =>
       call { 
-        logout_Logout_logoutController22_invoker.call(Logout_2.logoutController())
+        login_discord_DiscordRun_discordLogin22_invoker.call(DiscordRun_6.discordLogin())
       }
   
     // @LINE:42
-    case logout_Logout_logoutCallback23_route(params@_) =>
+    case login_discord_DiscordRun_discordCallback23_route(params@_) =>
+      call(params.fromQuery[String]("code", Some("")), params.fromQuery[String]("state", Some("")), params.fromQuery[String]("error", Some(""))) { (code, state, error) =>
+        login_discord_DiscordRun_discordCallback23_invoker.call(DiscordRun_6.discordCallback(code, state, error))
+      }
+  
+    // @LINE:44
+    case logout_Logout_logoutController24_route(params@_) =>
       call { 
-        logout_Logout_logoutCallback23_invoker.call(Logout_2.logoutCallback())
+        logout_Logout_logoutController24_invoker.call(Logout_2.logoutController())
+      }
+  
+    // @LINE:45
+    case logout_Logout_logoutCallback25_route(params@_) =>
+      call { 
+        logout_Logout_logoutCallback25_invoker.call(Logout_2.logoutCallback())
       }
   }
 }

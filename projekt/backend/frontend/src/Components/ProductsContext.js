@@ -3,9 +3,9 @@ import { useState, createContext, useEffect } from "react";
 import axios from 'axios';
 
 let config = {
-    baseURL: 'https://shopershopy-backend.azurewebsites.net/',
+    baseURL: 'http://localhost:9000',
     headers: {
-        'Access-Control-Allow-Origin': 'https://shopershopy-backend.azurewebsites.net:9002',
+        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
         'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
         'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token'

@@ -38,5 +38,8 @@ GET     /facebook/callback            login.facebook.FacebookRun.facebookCallbac
 #GET     /linkedin/linkedinRedirect      login.linkedin.LinkedinRun.linkedinLogin()
 #GET     /linkedin/callback            login.linkedin.LinkedinRun.linkedinCallback(code: String ?= "", state: String ?= "")
 
+GET     /discord/discordRedirect      login.discord.DiscordRun.discordLogin()
+GET     /discord/callback            login.discord.DiscordRun.discordCallback(code: String ?= "", state: String ?= "", error ?= "")
+
 GET     /logout                    logout.Logout.logoutController()
 GET     /logoutCallback            logout.Logout.logoutCallback()
