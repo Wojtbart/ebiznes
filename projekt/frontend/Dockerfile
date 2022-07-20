@@ -18,7 +18,7 @@ RUN \
 RUN \
     apt-get install -y libjansi-java && \  
     apt-get install -y curl && \
-    apt-get install -y --no-install-recommends apt-utils \
+    apt-get install -y --no-install-recommends apt-utils && \
     curl -sSL $SCALA -o scala.deb && \  
     dpkg -i scala.deb
 
