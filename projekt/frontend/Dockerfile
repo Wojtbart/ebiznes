@@ -18,7 +18,7 @@ RUN \
 RUN \
     apt-get install -y libjansi-java && \  
     apt-get install -y curl && \
-    apt-get install -y --no-install-recommends apt-utils && \
+    # apt-get install -y --no-install-recommends apt-utils && \
     curl -sSL $SCALA -o scala.deb && \  
     dpkg -i scala.deb
 
@@ -37,22 +37,28 @@ RUN \
 # COPY \
 #     ./target/scala-2.13 .
 
-WORKDIR /files
+WORKDIR /frontend
 
 COPY \
-    ./conf /files/conf
+    ./conf /frontend/conf
 
 COPY \
-    ./app /files/app
+    ./app /frontend/app
 
 COPY \
-    ./project /files/project
+    ./project /frontend/project
 
 # COPY \
 #     ./target /files/target
 
 COPY \
     ./build.sbt .
+
+COPY \
+    ./.bloop /frontend/.bloop
+
+COPY \
+    ./.metals /frontend/.metals
 
 
 
