@@ -3,7 +3,7 @@ FROM ubuntu:${UBUNTU}
 
 LABEL maintainer="Wojciech Sękowski <wojciech.sekowski@student.uj.edu.pl>"
 # Wersje
-ENV SCALA_VERSION 2.12.10
+ENV SCALA_VERSION 2.13.6
 ENV SBT_VERSION 1.6.2
 
 ENV SCALA http://www.scala-lang.org/files/archive/scala-$SCALA_VERSION.deb  
@@ -47,8 +47,8 @@ COPY \
 COPY \
     ./project /files/project
 
-COPY \
-    ./target /files/target
+# COPY \
+#     ./target /files/target
 
 COPY \
     ./build.sbt .
@@ -67,8 +67,7 @@ COPY \
 # WORKDIR /shop-1.0
 
 EXPOSE 9000
-EXPOSE 8081
-EXPOSE 8082
+EXPOSE 9001
+EXPOSE 9002
 
-CMD [ "sbt", "run",  "-Dhttp.port=8081", "-Dhttps.port=8082" ]
-# CMD ["/bin/bash"]
+CMD [ "sbt", "run",  "-Dhttp.port=9001", "-Dhttps.port=9002" ]

@@ -11,7 +11,7 @@ import { Navigate  } from 'react-router-dom';
 let config = {
     baseURL: 'https://shopershopy-backend.azurewebsites.net/',
     headers: {
-        'Access-Control-Allow-Origin': 'https://shopershopy-backend.azurewebsites.net:8082',
+        'Access-Control-Allow-Origin': 'https://shopershopy-backend.azurewebsites.net:9002',
         'Content-Type': 'application/json',
         'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
         'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token, Authorization',
@@ -39,7 +39,7 @@ const handleFacebookRedirect = async () => {
 }
 
 const handleGithubRedirect = async () => {
-    axios.get('https://shopershopy-backend.azurewebsites.net/github/githubRedirect',{withCredentials: true},config)
+    axios.get('/github/githubRedirect',{withCredentials: true},config)
     .then((githubLogin) => {
         console.log(githubLogin.data);
         window.open(githubLogin.data, "_self");
