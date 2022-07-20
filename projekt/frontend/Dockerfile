@@ -54,11 +54,11 @@ COPY \
 COPY \
     ./build.sbt .
 
-COPY \
-    ./.bloop /frontend/.bloop
+# COPY \
+#     ./.bloop /frontend/.bloop
 
-COPY \
-    ./.metals /frontend/.metals
+# COPY \
+#     ./.metals /frontend/.metals
 
 
 
