@@ -5,9 +5,7 @@ import { useSearchParams } from "react-router-dom";
 import { useCookies } from 'react-cookie';
 import  { useEffect }  from "react";
 import { Navigate  } from 'react-router-dom';
-// import https from 'https';
 
-// const httpsAgent = new https.Agent({rejectUnauthorized: false});
 let config = {
     baseURL: `http://localhost:9000/`,
     headers: {

@@ -4,7 +4,7 @@ import { useCookies } from 'react-cookie';
 import axios from 'axios'
 
 let config = {
-    baseURL: 'http://locaohost:9000',
+    baseURL: 'http://localhost:9000',
     headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
@@ -23,12 +23,16 @@ function sendProducts(token, paymentId, ...cart) {
 export const ShoppingCartContext = createContext({
     products: [],
     addProduct: () => {
+        console.log("123")
     },
     removeProduct: () => {
+        console.log("123")
     },
     removeAllProducts: () => {
+        console.log("123")
     },
     sendProductsInCart: () => {
+        console.log("123")
     },
 });
 
